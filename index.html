@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUB4TECH — Muito Mais que Tecnologia | Rusevel Barros</title>
-  <meta name="description" content="Ecossistema Soberano de Tecnologia, Vendas e Operação. Gestão de balcão, ERP sem travas, Reforma Tributária (IBS/CBS) e lucratividade com mentalidade de dono.">
+  <title>HUB4TECH — Soluções Soberanas a CAC Zero | Muito Mais que Tecnologia</title>
+  <meta name="description" content="Ecossistema Soberano de Tecnologia e Gestão com CAC Zero. Hub Fiscal, Hub T.I, Hub Vendas, Hub WMS e Inteligência de Caixa com mentalidade de dono.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800;900&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
   
   <style>
     :root {
-      --bg-void: #030407;
-      --bg-surface: #090c13;
-      --bg-surface-elevated: #0f1422;
-      --bg-card: rgba(14, 19, 31, 0.75);
-      --bg-card-hover: rgba(22, 30, 48, 0.95);
+      --bg-void: #05070b;
+      --bg-surface: #0a0d15;
+      --bg-surface-elevated: #101522;
+      --bg-card: rgba(13, 18, 29, 0.82);
+      --bg-card-hover: rgba(20, 27, 44, 0.95);
       
       --brand-red: #ff2d3b;
-      --brand-red-glow: rgba(255, 45, 59, 0.45);
       --brand-orange: #ff6827;
       --brand-amber: #f59e0b;
       --brand-cyan: #00f0ff;
-      --brand-cyan-glow: rgba(0, 240, 255, 0.35);
       --brand-whatsapp: #25d366;
-      --brand-purple: #8b5cf6;
       
       --text-white: #ffffff;
       --text-silver: #d1d5db;
@@ -55,17 +52,16 @@
       position: relative;
     }
 
-    /* MALHA CIBERNÉTICA VIVA DE FUNDO (CYBER GRID + AURORA) */
+    /* MALHA DE FUNDO ELEGANTE */
     .cyber-background {
       position: fixed;
       inset: 0;
       z-index: 0;
       pointer-events: none;
       background: 
-        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 45, 59, 0.18), transparent 70%),
-        radial-gradient(circle at 90% 25%, rgba(255, 104, 39, 0.12), transparent 45%),
-        radial-gradient(circle at 10% 70%, rgba(0, 240, 255, 0.08), transparent 50%),
-        radial-gradient(circle at 80% 85%, rgba(139, 92, 246, 0.08), transparent 45%);
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 45, 59, 0.14), transparent 70%),
+        radial-gradient(circle at 90% 25%, rgba(255, 104, 39, 0.09), transparent 45%),
+        radial-gradient(circle at 10% 70%, rgba(0, 240, 255, 0.06), transparent 50%);
     }
 
     .cyber-grid {
@@ -75,78 +71,49 @@
       pointer-events: none;
       background-size: 55px 55px;
       background-image: 
-        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+        linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
       mask-image: radial-gradient(ellipse at center, black 40%, transparent 85%);
       -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 85%);
     }
 
-    /* LINHA DE SCANNER CIBERNÉTICA SUAVE */
-    .scanline {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--brand-red), var(--brand-cyan), transparent);
-      opacity: 0.45;
-      animation: scan 8s linear infinite;
-      z-index: 1;
-      pointer-events: none;
-    }
-
-    @keyframes scan {
-      0% { transform: translateY(-100px); }
-      100% { transform: translateY(105vh); }
-    }
-
-    /* CONTEÚDO PRINCIPAL Z-INDEX SUPERIOR */
     .app-wrapper {
       position: relative;
       z-index: 2;
+      max-width: 1320px;
+      margin: 0 auto;
     }
 
-    /* TOP BAR NAVEGAÇÃO */
+    /* BARRA DE NAVEGAÇÃO */
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 16px 6%;
+      padding: 24px 6%;
       border-bottom: 1px solid var(--border-subtle);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(3, 4, 7, 0.85);
+      background: rgba(5, 7, 11, 0.85);
     }
 
-    /* LOGO OFICIAL HUB4TECH VETORIAL TECH */
     .brand-container {
       display: flex;
       align-items: center;
       gap: 14px;
       text-decoration: none;
-      color: #fff;
     }
 
     .brand-svg-mark {
-      width: 36px;
-      height: 36px;
-      filter: drop-shadow(0 0 12px var(--brand-red-glow));
-      transition: transform 0.3s ease;
-    }
-
-    .brand-container:hover .brand-svg-mark {
-      transform: rotate(90deg);
-    }
-
-    .brand-typography {
-      display: flex;
-      flex-direction: column;
+      width: 38px;
+      height: 38px;
+      filter: drop-shadow(0 0 12px rgba(255, 45, 59, 0.45));
     }
 
     .brand-name {
+      color: var(--text-white);
       font-family: var(--font-display);
       font-weight: 900;
       font-size: 1.45rem;
@@ -158,7 +125,6 @@
 
     .brand-name .accent {
       color: var(--brand-red);
-      font-family: var(--font-display);
       margin: 0 1px;
     }
 
@@ -183,8 +149,7 @@
       text-decoration: none;
       font-size: 0.85rem;
       font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.5px;
       transition: color 0.2s;
     }
 
@@ -199,7 +164,7 @@
       background: rgba(37, 211, 102, 0.1);
       border: 1px solid rgba(37, 211, 102, 0.4);
       color: var(--brand-whatsapp);
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 8px;
       text-decoration: none;
       font-size: 0.82rem;
@@ -217,39 +182,14 @@
     /* HERO SECTION */
     .hero-container {
       position: relative;
-      padding: 60px 6% 90px;
-      overflow: hidden;
-    }
-
-    /* LETREIRO CIBERNÉTICO GIGANTE EM PROFUNDIDADE (PARALLAX EFFECT) */
-    .bg-massive-text {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-family: var(--font-display);
-      font-size: clamp(4.8rem, 16vw, 14.5rem);
-      font-weight: 900;
-      color: transparent;
-      -webkit-text-stroke: 2px rgba(255, 45, 59, 0.65);
-      text-stroke: 2px rgba(255, 45, 59, 0.65);
-      letter-spacing: 4px;
-      white-space: nowrap;
-      pointer-events: none;
-      z-index: 1;
-      filter: drop-shadow(0 0 40px rgba(255, 45, 59, 0.35));
-      user-select: none;
-      opacity: 0.9;
+      padding: 60px 6% 80px;
     }
 
     .hero-grid {
-      position: relative;
-      z-index: 2;
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
       gap: 48px;
       align-items: center;
-      margin-top: 40px;
     }
 
     .badge-pill-tech {
@@ -267,7 +207,6 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       margin-bottom: 20px;
-      box-shadow: 0 0 20px rgba(255, 45, 59, 0.15);
     }
 
     .pulse-dot {
@@ -285,29 +224,28 @@
     }
 
     .hero-headline {
-      font-size: clamp(2.4rem, 5.2vw, 4rem);
+      font-size: clamp(2.3rem, 5vw, 3.8rem);
       font-weight: 900;
-      line-height: 1.05;
-      letter-spacing: -1.5px;
+      line-height: 1.1;
+      letter-spacing: -1.2px;
       margin-bottom: 22px;
     }
 
     .hero-headline .name-highlight {
       display: block;
       font-family: var(--font-display);
-      font-size: clamp(2.8rem, 6.2vw, 4.6rem);
+      font-size: clamp(2.6rem, 5.8vw, 4.2rem);
       background: linear-gradient(135deg, #ffffff 40%, #c1c9d6 70%, var(--brand-red) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .hero-copy {
-      font-size: 1.12rem;
+      font-size: 1.08rem;
       color: var(--text-silver);
       line-height: 1.75;
       margin-bottom: 34px;
-      max-width: 590px;
+      max-width: 600px;
     }
 
     .hero-copy strong {
@@ -315,13 +253,12 @@
       font-weight: 700;
     }
 
-    /* BOTÕES PRINCIPAIS DE AÇÃO */
     .cta-button-group {
       display: flex;
       gap: 16px;
       align-items: center;
       flex-wrap: wrap;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
     }
 
     .btn-primary-action {
@@ -336,28 +273,13 @@
       font-size: 1rem;
       font-weight: 800;
       text-decoration: none;
-      box-shadow: 0 8px 35px rgba(255, 45, 59, 0.45);
+      box-shadow: 0 8px 30px rgba(255, 45, 59, 0.4);
       transition: all 0.25s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-primary-action::before {
-      content: '';
-      position: absolute;
-      top: 0; left: -100%;
-      width: 100%; height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
-      transition: left 0.6s ease;
-    }
-
-    .btn-primary-action:hover::before {
-      left: 100%;
     }
 
     .btn-primary-action:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 45px rgba(255, 45, 59, 0.7);
+      box-shadow: 0 12px 40px rgba(255, 45, 59, 0.6);
     }
 
     .btn-secondary-action {
@@ -380,29 +302,23 @@
       border-color: rgba(255, 255, 255, 0.25);
     }
 
-    /* PAINEL DE MÉTRICAS BRUTALISTAS */
+    /* MÉTRICAS DE IMPACTO */
     .stats-brutalist-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       border-top: 1px solid var(--border-subtle);
-      padding-top: 30px;
-    }
-
-    .stat-box {
-      display: flex;
-      flex-direction: column;
+      padding-top: 28px;
     }
 
     .stat-number {
       font-family: var(--font-display);
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 900;
       line-height: 1;
       color: var(--brand-red);
       letter-spacing: -1px;
       margin-bottom: 6px;
-      text-shadow: 0 0 25px rgba(255, 45, 59, 0.4);
     }
 
     .stat-label {
@@ -414,23 +330,20 @@
       line-height: 1.3;
     }
 
-    /* CARD DE RETRATO RETINA ENHANCED COM ILUMINAÇÃO NEON */
+    /* CARD DE FUNDADORES HERO */
     .portrait-stage {
       position: relative;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
 
-    /* Borda viva com efeito de feixe de luz */
     .portrait-frame-outer {
-      position: relative;
       width: 100%;
       max-width: 440px;
       padding: 2px;
       border-radius: 24px;
       background: linear-gradient(145deg, rgba(255, 45, 59, 0.8), rgba(0, 240, 255, 0.3), rgba(255, 104, 39, 0.8));
-      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85), 0 0 45px rgba(255, 45, 59, 0.25);
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.85);
     }
 
     .portrait-frame-inner {
@@ -442,16 +355,10 @@
 
     .portrait-img {
       width: 100%;
-      height: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
       display: block;
-      filter: contrast(1.1) brightness(0.98);
-      transition: transform 0.5s ease;
-    }
-
-    .portrait-frame-outer:hover .portrait-img {
-      transform: scale(1.03);
+      filter: contrast(1.08);
     }
 
     .portrait-badge-node {
@@ -470,7 +377,6 @@
       font-weight: 700;
       color: var(--brand-cyan);
       backdrop-filter: blur(10px);
-      box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
     }
 
     .status-dot-green {
@@ -483,31 +389,28 @@
 
     .portrait-caption {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 26px;
+      bottom: 0; left: 0; right: 0;
+      padding: 24px;
       background: linear-gradient(to top, rgba(3, 4, 7, 0.98) 25%, rgba(3, 4, 7, 0.6) 75%, transparent 100%);
     }
 
     .portrait-name {
       font-family: var(--font-display);
-      font-size: 1.55rem;
+      font-size: 1.5rem;
       font-weight: 800;
       letter-spacing: -0.5px;
     }
 
     .portrait-title {
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       color: var(--text-muted);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    /* GRID DAS 6 SOLUÇÕES CRAFT */
-    .section-craft {
+    /* SEÇÃO DAS SOLUÇÕES HUB */
+    .section-hub {
       padding: 80px 6%;
       border-top: 1px solid var(--border-subtle);
-      position: relative;
     }
 
     .section-title-wrap {
@@ -526,19 +429,18 @@
 
     .section-heading {
       font-family: var(--font-display);
-      font-size: clamp(2rem, 4vw, 3rem);
+      font-size: clamp(1.9rem, 3.8vw, 2.9rem);
       font-weight: 900;
       letter-spacing: -1px;
     }
 
-    .craft-grid {
+    .hub-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
       gap: 24px;
     }
 
-    /* GLASSMORPHISM CARD COM BORDAS VIVAS */
-    .craft-card {
+    .hub-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: 16px;
@@ -553,7 +455,7 @@
       overflow: hidden;
     }
 
-    .craft-card::before {
+    .hub-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
@@ -563,25 +465,25 @@
       transition: opacity 0.3s;
     }
 
-    .craft-card:hover {
+    .hub-card:hover {
       background: var(--bg-card-hover);
       border-color: rgba(255, 45, 59, 0.45);
       transform: translateY(-5px);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 45, 59, 0.12);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
     }
 
-    .craft-card:hover::before {
+    .hub-card:hover::before {
       opacity: 1;
     }
 
-    .craft-card-top {
+    .hub-card-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 18px;
     }
 
-    .craft-badge-code {
+    .hub-badge-code {
       font-family: var(--font-mono);
       font-size: 0.8rem;
       font-weight: 800;
@@ -589,7 +491,7 @@
       letter-spacing: 1px;
     }
 
-    .craft-status {
+    .hub-status {
       font-family: var(--font-mono);
       font-size: 0.72rem;
       font-weight: 700;
@@ -600,7 +502,7 @@
       border-radius: 6px;
     }
 
-    .craft-title {
+    .hub-title {
       font-family: var(--font-display);
       font-size: 1.35rem;
       font-weight: 800;
@@ -608,14 +510,14 @@
       letter-spacing: -0.5px;
     }
 
-    .craft-desc {
+    .hub-desc {
       font-size: 0.94rem;
       color: var(--text-silver);
       line-height: 1.65;
       margin-bottom: 24px;
     }
 
-    .craft-footer {
+    .hub-footer {
       border-top: 1px solid rgba(255, 255, 255, 0.06);
       padding-top: 16px;
       display: flex;
@@ -623,7 +525,7 @@
       align-items: center;
     }
 
-    .craft-tag {
+    .hub-tag {
       font-family: var(--font-mono);
       font-size: 0.75rem;
       color: var(--text-dark);
@@ -631,7 +533,7 @@
       text-transform: uppercase;
     }
 
-    .craft-btn-link {
+    .hub-btn-link {
       color: #ffffff;
       font-size: 0.88rem;
       font-weight: 700;
@@ -642,19 +544,130 @@
       transition: color 0.2s;
     }
 
-    .craft-btn-link:hover {
+    .hub-btn-link:hover {
       color: var(--brand-orange);
     }
 
-    /* MANIFESTO E QUOTE BOX COM GLOW */
+    /* SEÇÃO DE GOVERNANÇA / QUEM SOMOS (SÓCIOS) */
+    .section-leadership {
+      padding: 80px 6%;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .leadership-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 36px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
+      overflow: hidden;
+      padding: 36px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 900px) {
+      .leadership-showcase {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+    }
+
+    .leadership-photo-wrap {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 16px 36px rgba(0,0,0,0.7);
+      background: #000;
+      position: relative;
+    }
+
+    .leadership-photo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: contrast(1.08) brightness(0.98);
+      transition: transform 0.5s ease;
+    }
+
+    .leadership-photo-wrap:hover img {
+      transform: scale(1.02);
+    }
+
+    .leadership-badge-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+    }
+
+    .leadership-content {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .leader-item {
+      border-left: 2px solid var(--border-subtle);
+      padding-left: 20px;
+      transition: border-color 0.3s ease;
+    }
+
+    .leader-item:hover {
+      border-color: var(--brand-orange);
+    }
+
+    .leader-item-role {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--brand-red);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .leader-item-name {
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .leader-item-bio {
+      font-size: 0.92rem;
+      color: var(--text-silver);
+      line-height: 1.6;
+    }
+
+    .leader-bio {
+      font-size: 0.92rem;
+      color: var(--text-silver);
+      line-height: 1.6;
+    }
+
+    /* MANIFESTO QUOTE BOX COM GLOW */
     .manifesto-banner {
       margin: 40px 6% 80px;
-      background: linear-gradient(145deg, rgba(15, 20, 34, 0.85), rgba(7, 9, 14, 0.95));
+      background: linear-gradient(145deg, rgba(16, 21, 34, 0.85), rgba(7, 9, 14, 0.95));
       border: 1px solid var(--border-red);
       border-radius: 20px;
       padding: 48px;
       box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(255, 45, 59, 0.15);
-      position: relative;
     }
 
     .manifesto-eyebrow {
@@ -668,7 +681,7 @@
     }
 
     .manifesto-quote {
-      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      font-size: clamp(1.2rem, 2.5vw, 1.65rem);
       font-weight: 700;
       line-height: 1.55;
       letter-spacing: -0.5px;
@@ -696,7 +709,7 @@
       color: var(--text-muted);
       flex-wrap: wrap;
       gap: 16px;
-      background: rgba(3, 4, 7, 0.95);
+      background: rgba(5, 7, 11, 0.95);
     }
 
     .footer-links a {
@@ -713,10 +726,6 @@
     @media (max-width: 900px) {
       .hero-grid {
         grid-template-columns: 1fr;
-        margin-top: 20px;
-      }
-      .bg-massive-text {
-        font-size: clamp(3.8rem, 18vw, 6.8rem);
       }
       .portrait-stage {
         order: -1;
@@ -728,58 +737,23 @@
     }
   </style>
 
-  <!-- SEO & GEO ENGINE METADATA -->
-  <meta name="author" content="Rusevel Barros">
+  <meta name="author" content="HUB4TECH">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="HUB4TECH | Muito Mais que Tecnologia — Rusevel Barros">
-  <meta property="og:description" content="Ecossistema Soberano de Tecnologia, Vendas e Operação. ERP sem travas, gestão de balcão e lucratividade real.">
+  <meta property="og:title" content="HUB4TECH | Soluções Soberanas a CAC Zero">
+  <meta property="og:description" content="Ecossistema Soberano de Tecnologia e Gestão com CAC Zero. Hub Fiscal, Hub T.I, Hub Vendas e Mentalidade de Dono.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://rusevel.github.io/hub4tech/">
-  <meta property="og:image" content="https://rusevel.github.io/hub4tech/assets/rusevel.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HUB4TECH — Rusevel Barros">
-  <meta name="twitter:description" content="Gente faz negócio com gente. Muito Mais que Tecnologia.">
-  <meta name="twitter:image" content="https://rusevel.github.io/hub4tech/assets/rusevel.jpg">
-
-  <!-- Schema.org JSON-LD para Google & Motores de IA (GEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "HUB4TECH",
-    "founder": {
-      "@type": "Person",
-      "name": "Rusevel Barros",
-      "jobTitle": "Arquiteto de Soluções ERP & Estrategista Operacional",
-      "email": "rusevel@h4t.com"
-    },
-    "description": "Ecossistema de Tecnologia, Vendas e Operação para empresas brasileiras. Gestão de balcão, Reforma Tributária IBS/CBS, WMS e fluxo de caixa.",
-    "url": "https://rusevel.github.io/hub4tech/",
-    "sameAs": [
-      "https://github.com/rusevel"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "São Paulo",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    }
-  }
-  </script>
+  <meta property="og:url" content="https://hub4tech.com.br/">
 </head>
 <body>
 
-  <!-- ELEMENTOS DE VIBRAÇÃO & EFEITOS TECNOLÓGICOS DE FUNDO -->
   <div class="cyber-background"></div>
   <div class="cyber-grid"></div>
-  <div class="scanline"></div>
 
   <div class="app-wrapper">
 
-    <!-- BARRA DE NAVEGAÇÃO -->
+    <!-- NAVEGAÇÃO -->
     <nav>
       <a href="#" class="brand-container">
-        <!-- ÍCONE TECH VETORIAL HUB4TECH -->
         <svg class="brand-svg-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="2" y="2" width="36" height="36" rx="8" stroke="url(#logo_grad)" stroke-width="2.5"/>
           <path d="M12 10V30M28 10V30M12 20H28" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
@@ -799,66 +773,59 @@
       </a>
 
       <div class="nav-links">
-        <a href="#solucoes">Soluções</a>
+        <a href="#solucoes">Soluções Hub</a>
+        <a href="#governanca">Liderança</a>
         <a href="#manifesto">Manifesto</a>
-        <a href="#sobre">Quem Somos</a>
-        <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20vi%20o%20portal%20da%20HUB4TECH%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn-nav-wa">
+        <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20vim%20pelo%20portal%20da%20HUB4TECH%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn-nav-wa">
           WhatsApp Direto ↗
         </a>
       </div>
     </nav>
 
-    <!-- HERO SECTION BRUTALISTA DE ALTO IMPACTO -->
+    <!-- HERO SECTION -->
     <header class="hero-container">
-      <!-- Letreiro Gigante com Efeito Stroke Glow -->
-      <div class="bg-massive-text">PORTFÓLIO</div>
-
       <div class="hero-grid">
-        <!-- Lado Esquerdo: Headline e Copy -->
         <div class="hero-content">
           <div class="badge-pill-tech">
             <span class="pulse-dot"></span>
-            ARQUITETO DE SISTEMAS & ESTRATEGISTA OPERACIONAL
+            SOLUÇÕES EMPRESARIAIS A CAC ZERO
           </div>
           
           <h1 class="hero-headline">
-            Olá, eu sou
-            <span class="name-highlight">RUSEVEL BARROS.</span>
+            Tecnologia de Dono para Dono.
+            <span class="name-highlight">MUITO MAIS QUE TECNOLOGIA.</span>
           </h1>
 
           <p class="hero-copy">
-            Construo ecossistemas de <strong>ERP, Vendas e Inteligência de Caixa</strong> que operam com precisão cirúrgica. Integro balcão, expedição com código de barras, Reforma Tributária (IBS/CBS) e WhatsApp numa máquina comercial que roda <strong>24/7</strong> para proteger o lucro real da sua empresa.
+            Entregamos soluções corporativas com <strong>CAC Quase Zero</strong>. Conectamos balcão, Reforma Tributária (IBS/CBS), WMS e contingência soberana numa esteira de resultados reais para blindar a sua margem e a sua operação <strong>24/7</strong>.
           </p>
 
-          <!-- CTAs de Ação -->
           <div class="cta-button-group">
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20HUB4TECH%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-primary-action">
-              Agendar Conversa no WhatsApp →
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1%20Rusevel,%20quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20HUB4TECH%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="btn-primary-action">
+              Falar com Nossos Sócios no WhatsApp →
             </a>
             <a href="#solucoes" class="btn-secondary-action">
-              Ver Módulos do Sistema ↓
+              Conhecer Nossos Hubs ↓
             </a>
           </div>
 
-          <!-- Métricas Reais de Impacto Brutalista -->
           <div class="stats-brutalist-grid">
             <div class="stat-box">
-              <span class="stat-number">20+</span>
-              <span class="stat-label">Anos em Gestão & Balcão</span>
+              <span class="stat-number">~0</span>
+              <span class="stat-label">Custo de Aquisição (CAC)</span>
             </div>
             <div class="stat-box">
               <span class="stat-number">6</span>
-              <span class="stat-label">Módulos Soberanos Ativos</span>
+              <span class="stat-label">Hubs Operacionais Integrados</span>
             </div>
             <div class="stat-box">
               <span class="stat-number">100%</span>
-              <span class="stat-label">Mentalidade de Dono</span>
+              <span class="stat-label">Soberania & Independência</span>
             </div>
           </div>
         </div>
 
-        <!-- Lado Direito: Retrato com Glow Neon Lateral & Moldura Viva -->
-        <div class="portrait-stage" id="sobre">
+        <div class="portrait-stage">
           <div class="portrait-frame-outer">
             <div class="portrait-frame-inner">
               <div class="portrait-badge-node">
@@ -872,7 +839,7 @@
                 <div style="display: flex; gap: 10px; font-size: 0.8rem; color: var(--text-silver); font-family: var(--font-mono);">
                   <span>São Paulo, SP</span>
                   <span>•</span>
-                  <span style="color: var(--brand-whatsapp);">Disponível para Implantações</span>
+                  <span style="color: var(--brand-whatsapp);">Operação Ativa 24/7</span>
                 </div>
               </div>
             </div>
@@ -881,107 +848,145 @@
       </div>
     </header>
 
-    <!-- SEÇÃO DAS SOLUÇÕES CRAFT -->
-    <section class="section-craft" id="solucoes">
+    <!-- SEÇÃO DAS SOLUÇÕES HUB -->
+    <section class="section-hub" id="solucoes">
       <div class="section-title-wrap">
-        <div class="section-eyebrow">// ECOSSISTEMA OPERACIONAL</div>
-        <h2 class="section-heading">Soluções Desenhadas para o Mundo Real</h2>
+        <div class="section-eyebrow">// ECOSSISTEMA DE SOLUÇÕES EMPRESARIAIS</div>
+        <h2 class="section-heading">Nossos Hubs de Alta Performance</h2>
       </div>
 
-      <div class="craft-grid">
-        <!-- 01 VendaCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">01 / VENDAS & BALCÃO</span>
-            <span class="craft-status">● ATIVO</span>
+      <div class="hub-grid">
+        <!-- 01 Hub Fiscal -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">01 / TRIBUTÁRIO & REFORMA</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">VendaCraft & SPIN</h3>
-            <p class="craft-desc">Atendimento ágil de balcão sem travas, resgate de orçamentos parados, cultura "Todos Vendem" e metodologia SPIN Selling para fechar negócios sem queimar margem.</p>
+            <h3 class="hub-title">Hub Fiscal 2026</h3>
+            <p class="hub-desc">Blindagem e adaptação cirúrgica para a Reforma Tributária (IBS/CBS). Motores de precificação com precisão decimal para nunca vender com prejuízo fiscal oculto.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Comercial & Balcão</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20VendaCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">IBS / CBS & Margem</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20Fiscal." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
           </div>
         </div>
 
-        <!-- 02 FiscalCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">02 / TRIBUTÁRIO & IBS/CBS</span>
-            <span class="craft-status">● ATIVO</span>
+        <!-- 02 Hub T.I -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">02 / INFRA & SOBERANIA</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">FiscalCraft 2026</h3>
-            <p class="craft-desc">Preparação cirúrgica para a Reforma Tributária (IBS/CBS), precificação em 5 modos com precisão decimal e proteção da margem líquida para não vender com prejuízo oculto.</p>
+            <h3 class="hub-title">Hub T.I Soberana</h3>
+            <p class="hub-desc">Infraestrutura híbrida On/Off LAN. A sua loja e seus terminais continuam faturando mesmo se a internet da rua cair, com proteção Blue Team e sem taxas abusivas de terceiros.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Reforma Tributária</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20FiscalCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">Infra & Contingência</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20T.I." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
           </div>
         </div>
 
-        <!-- 03 LogCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">03 / WMS & SUPRIMENTOS</span>
-            <span class="craft-status">● ATIVO</span>
+        <!-- 03 Hub Vendas -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">03 / COMERCIAL & BALCÃO</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">LogCraft & WMS</h3>
-            <p class="craft-desc">Conferência de expedição por código de barras, controle de chão de fábrica, cálculo de Curva ABC e eliminação definitiva de furos e perdas por estoque parado.</p>
+            <h3 class="hub-title">Hub Vendas & SPIN</h3>
+            <p class="hub-desc">Atendimento ágil de balcão sem travas, resgate automatizado de orçamentos parados e metodologia comercial para fechar pedidos com CAC próximo de zero.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Logística & Estoque</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20LogCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">Comercial & Balcão</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20Vendas." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
           </div>
         </div>
 
-        <!-- 04 CaixaCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">04 / CFO & FLUXO</span>
-            <span class="craft-status">● ATIVO</span>
+        <!-- 04 Hub WMS -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">04 / LOGÍSTICA & ESTOQUE</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">CaixaCraft & Spread</h3>
-            <p class="craft-desc">Inversão estratégica de prazos médios (PMR vs PMP). A empresa aprende a receber antes de pagar fornecedores, estancando a sangria silenciosa de caixa.</p>
+            <h3 class="hub-title">Hub WMS & Logística</h3>
+            <p class="hub-desc">Conferência de expedição com leitura por código de barras, controle de chão de fábrica, cálculo de Curva ABC e eliminação definitiva de desvios e furos de estoque.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Gestão Financeira</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20CaixaCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">WMS & Suprimentos</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20WMS." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
           </div>
         </div>
 
-        <!-- 05 ShieldCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">05 / CONTINGÊNCIA & SEGURANÇA</span>
-            <span class="craft-status">● ATIVO</span>
+        <!-- 05 Hub Caixa -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">05 / CFO & FLUXO REAL</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">ShieldCraft (On/Off LAN)</h3>
-            <p class="craft-desc">A loja nunca para. Sistema com sincronização híbrida local e nuvem que continua faturando no balcão mesmo se a internet da rua cair, com proteção Blue Team.</p>
+            <h3 class="hub-title">Hub Caixa & Spread</h3>
+            <p class="hub-desc">Inversão de prazos médios (PMR vs PMP). A empresa aprende a receber dos clientes antes de pagar os fornecedores, estancando a sangria silenciosa de capital de giro.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Infra & Contingência</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20ShieldCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">Gestão Financeira</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20Caixa." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
           </div>
         </div>
 
-        <!-- 06 HumanCraft -->
-        <div class="craft-card">
-          <div class="craft-card-top">
-            <span class="craft-badge-code">06 / LIDERANÇA & PESSOAS</span>
-            <span class="craft-status">● ATIVO</span>
+        <!-- 06 Hub Pessoas -->
+        <div class="hub-card">
+          <div class="hub-card-top">
+            <span class="hub-badge-code">06 / LIDERANÇA & ALINHAMENTO</span>
+            <span class="hub-status">● ATIVO</span>
           </div>
           <div>
-            <h3 class="craft-title">HumanCraft & Alinhamento</h3>
-            <p class="craft-desc">O alinhamento dos sonhos entre líder e equipe. Processos com dono e prazo rígido, clima de alta confiança e conscientização que transforma colaboradores em guardiões do negócio.</p>
+            <h3 class="hub-title">Hub Pessoas & Cultura</h3>
+            <p class="hub-desc">Alinhamento rigoroso entre a liderança e o chão da empresa. Processos com dono e prazo rígido, transformando colaboradores em verdadeiros guardiões do negócio.</p>
           </div>
-          <div class="craft-footer">
-            <span class="craft-tag">Cultura & Gente</span>
-            <a href="https://wa.me/5511969293429?text=Ol%C3%A1%20Rusevel,%20gostaria%20de%20saber%20mais%20sobre%20o%20HumanCraft." target="_blank" rel="noopener noreferrer" class="craft-btn-link">Ver Detalhes →</a>
+          <div class="hub-footer">
+            <span class="hub-tag">Cultura & Gestão</span>
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1,%20gostaria%20de%20saber%20mais%20sobre%20o%20Hub%20Pessoas." target="_blank" rel="noopener noreferrer" class="hub-btn-link">Falar com Especialista →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE GOVERNANÇA / QUEM SOMOS (SÓCIOS) -->
+    <section class="section-leadership" id="governanca">
+      <div class="section-title-wrap">
+        <div class="section-eyebrow">// GOVERNANÇA & LIDERANÇA EXECUTIVA</div>
+        <h2 class="section-heading">Os Sócios por Trás da HUB4TECH</h2>
+      </div>
+
+      <div class="leadership-showcase">
+        <div class="leadership-photo-wrap">
+          <div class="leadership-badge-tag">
+            <span class="status-dot-green"></span>
+            <span>Sócios Fundadores — HUB4TECH</span>
+          </div>
+          <img src="assets/socios.jpg" alt="Rusevel Barros e Edvar Boechat — Sócios da HUB4TECH">
+        </div>
+
+        <div class="leadership-content">
+          <div class="leader-item">
+            <div class="leader-item-role">Fundador & Arquiteto de Sistemas</div>
+            <h3 class="leader-item-name">Rusevel Barros</h3>
+            <p class="leader-item-bio">Mais de duas décadas de experiência em balcão, ERPs corporativos, arquitetura de sistemas soberanos e automação de alta performance com mentalidade de dono e foco em CAC zero.</p>
+          </div>
+
+          <div class="leader-item">
+            <div class="leader-item-role">Sócio & Estrategista de Negócios</div>
+            <h3 class="leader-item-name">Edvar Boechat</h3>
+            <p class="leader-item-bio">Liderança executiva e visão estratégica comercial. Especialista em estruturação de operações, parcerias corporativas de alto impacto e expansão de mercado com rigor de rentabilidade.</p>
+          </div>
+
+          <div style="padding-top: 8px;">
+            <a href="https://wa.me/5511927379688?text=Ol%C3%A1%20Rusevel%20e%20Edvar,%20gostaria%20de%20conversar%20sobre%20as%20solu%C3%A7%C3%B5es%20da%20HUB4TECH." target="_blank" rel="noopener noreferrer" class="btn-primary-action" style="display: inline-block; text-decoration: none; text-align: center; width: 100%;">
+              Conversar com Nossos Sócios no WhatsApp →
+            </a>
           </div>
         </div>
       </div>
@@ -989,12 +994,12 @@
 
     <!-- MANIFESTO QUOTE BOX -->
     <section class="manifesto-banner" id="manifesto">
-      <div class="manifesto-eyebrow">// O COMPROMISSO HUB4TECH</div>
+      <div class="manifesto-eyebrow">// O MANIFESTO HUB4TECH — GENTE FAZ NEGÓCIO COM GENTE</div>
       <div class="manifesto-quote">
-        "Antes de CNPJs, antes de faturamento ou de softwares, existem pessoas, famílias e sonhos. Acreditamos no empresário e no colaborador que acordam cedo para mudar seu pedaço de mundo. Não empurramos sistemas frios: pegamos na mão de quem constrói o Brasil com soluções reais que funcionam na prática."
+        "Antes de CNPJs, antes de faturamento ou de softwares, existem pessoas, famílias e sonhos. Acreditamos no empresário e no colaborador que acordam cedo para mudar seu pedaço de mundo. Não empurramos sistemas frios com custos abusivos: entregamos soluções a CAC próximo de zero, pegando na mão de quem constrói o Brasil com tecnologia que resolve o mundo real."
       </div>
       <div class="manifesto-author">
-        — <strong>Rusevel Barros</strong>, Fundador da HUB4TECH
+        — <strong>Liderança HUB4TECH</strong>
       </div>
     </section>
 
@@ -1005,8 +1010,9 @@
         <div style="font-size: 0.78rem; margin-top: 4px; color: var(--text-dark); font-family: var(--font-mono);">SOVEREIGN ECOSYSTEM © 2026 HUB4TECH.</div>
       </div>
       <div class="footer-links">
-        <a href="https://wa.me/5511969293429" target="_blank" rel="noopener noreferrer" style="color: var(--brand-whatsapp); font-weight: 700;">WhatsApp: (11) 96929-3429</a>
-        <a href="#solucoes">Ecossistema</a>
+        <a href="https://wa.me/5511927379688" target="_blank" rel="noopener noreferrer" style="color: var(--brand-whatsapp); font-weight: 700;">WhatsApp: (11) 92737-9688</a>
+        <a href="#solucoes">Hubs</a>
+        <a href="#governanca">Liderança</a>
         <a href="#manifesto">Manifesto</a>
       </div>
     </footer>
