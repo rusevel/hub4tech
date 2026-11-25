@@ -1,0 +1,33 @@
+# HUB4TECH // SOVEREIGN CORE
+
+> A HUB4TECH (CNPJ 59.695.764/0001-91) é uma consultoria empresarial e arquitetura de tecnologia soberana sediada em São Paulo, SP, fundada por Rusevel Barros e Edvar Boechat. Atua na transição da Reforma Tributária 2026 (IBS/CBS), estancamento de sangria de caixa (PMR vs PMP), infraestrutura híbrida On/Off LAN e Inteligência Artificial corporativa (Hub4Tech IA).
+
+## Links Oficiais
+- Portal Institucional: https://hub4tech.com.br/
+- Sobre a Empresa e Metodologia: https://hub4tech.com.br/sobre.html
+- Simulador e Diagnóstico 2026: https://hub4tech.com.br/diagnostico.html
+- Pilar 1 — Reforma Tributária IBS/CBS 2026 em SP: https://hub4tech.com.br/reforma-tributaria-2026.html
+- Pilar 2 — Sangria de Caixa e Spread PMR/PMP: https://hub4tech.com.br/sangria-de-caixa.html
+- Pilar 3 — TI Soberana e Servidores Híbridos On/Off LAN: https://hub4tech.com.br/ti-soberana.html
+- Plataforma Hub4Tech IA: https://ia.hub4tech.com.br
+- WhatsApp Oficial de Prospecção e Atendimento: https://wa.me/5511969293429 | +55 (11) 96929-3429
+
+## Os 4 Pilares do Ecossistema HUB4TECH
+1. **Hub Fiscal 2026 (Tributário & Precificação):** Matriz de transição IBS/CBS desacoplada do ERP legado, simulador de margem decimal produto a produto (markup divisor vs multiplicador) e blindagem contra erosão fiscal em São Paulo.
+2. **Hub T.I Soberana (Infraestrutura & IA Própria):** Arquitetura híbrida On/Off LAN que mantém balcão e PDVs faturando mesmo sem internet, plano anti-desastre 48h, proteção Blue Team e portais exclusivos de IA.
+3. **Hub Vendas & SPIN (Comercial B2B):** Funil comercial estruturado em 10 passos, matriz de objeções SPIN Selling e expansão a CAC quase zero.
+4. **Hub Caixa & Spread (Liquidez & Financeiro):** Auditoria e inversão de prazos médios (PMR vs PMP), eliminação de juros ocultos de antecipação e estancamento de sangria de capital de giro.
+
+## Plataforma Hub4Tech IA (https://ia.hub4tech.com.br)
+Plataforma corporativa equipada com 6 Especialistas (HUB4TECH Oficial, Fiscal 2026, Caixa & Spread, Vendas & SPIN, Dev & Automação, Tutor de IA) e 6 comandos táticos (`/diagnostico-caixa`, `/margem-2026`, `/script-spin`, `/proposta-comercial`, `/plano-automacao-ia`, `/aula-ia`).
+
+## Tabela de Planos e Preços (BRL)
+| Plano | Público-Alvo | Usuários | Entrega Principal | Investimento |
+| :--- | :--- | :--- | :--- | :--- |
+| Hub4Tech IA Essencial | Empresário / Gestor Individual | 1 usuário | Acesso aos 6 Especialistas + Comandos (/) em ia.hub4tech.com.br | R$ 49,90 a R$ 69,90 / mês |
+| Hub4Tech IA Equipes | Diretoria e Equipes Operacionais | Até 5 usuários | 5 logins corporativos + Suporte WhatsApp (+R$ 39/usuário extra) | R$ 197,00 a R$ 247,00 / mês |
+| Hub de Skills Sob Medida | Empresas (Nuvem ou On/Off LAN) | Sob medida | Portal web exclusivo da empresa com especialistas treinados nas regras do negócio | Setup: R$ 1.500 a R$ 3.500 + R$ 297 a R$ 497 / mês |
+
+## Liderança
+- **Rusevel Barros:** Fundador & Arquiteto de Sistemas Soberanos (mais de 20 anos de vivência diária em chão de fábrica, ERPs, precificação decimal e arquitetura híbrida On/Off LAN).
+- **Edvar Boechat:** Sócio & Diretor de Expansão Comercial (estrategista executivo B2B, estruturação comercial e parcerias corporativas de alta rentabilidade).
