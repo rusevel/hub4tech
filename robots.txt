@@ -1,12 +1,13 @@
 User-agent: *
 Allow: /
 Disallow: /.git/
+Disallow: /assets/*.map
 
-# Motores de IA e Busca
-User-agent: OAI-SearchBot
+# Motores de IA, RAG e Motores de Resposta Direta (GEO / AEO)
+User-agent: GPTBot
 Allow: /
 
-User-agent: GPTBot
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
@@ -15,13 +16,35 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+User-agent: Gemini-Web
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 User-agent: Bingbot
 Allow: /
 
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+# Sinalizacao Avancada de Treinamento e Citacao Autorizada de IA (GEO Protocol)
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+
+# Sitemaps e Contexto para Modelos de Linguagem
 Sitemap: https://hub4tech.com.br/sitemap.xml
